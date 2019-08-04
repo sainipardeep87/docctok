@@ -57,19 +57,19 @@ export class HttpService extends HttpClient {
     //         });
     // }
 
-    post(url: string, body: any): Observable<any> {
-        this.showLoader(url);
-        return super.post(url, body)
-            // .catchError(this.onCatch)
-            .subscribe((res: Response) => {
-                this.onSuccess(res);
-            }, (error: any) => {
-                this.onError(error);
-            })
-            // .finally(() => {
-            //     this.onEnd();
-            // });
-    }
+    // post(url: string, body: any): Observable<any> {
+    //     this.showLoader(url);
+    //     return super.post(url, body)
+    //         // .catchError(this.onCatch)
+    //         .subscribe((res: Response) => {
+    //             this.onSuccess(res);
+    //         }, (error: any) => {
+    //             this.onError(error);
+    //         })
+    //         // .finally(() => {
+    //         //     this.onEnd();
+    //         // });
+    // }
 
     // put(url: string, body: any, options?: RequestOptionsArgs): Observable<Response> {
     //     this.showLoader(url);
