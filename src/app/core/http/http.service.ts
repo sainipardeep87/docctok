@@ -30,18 +30,18 @@ export class HttpService extends HttpClient {
         super(handler);
     }
 
-    get(url: string): Observable<any> {
-        return super.get(url)
-        .catch(this.onCatch)
-        .do((res: Response) => {
-            this.onSuccess(res);
-        }, (error: any) => {
-            this.onError(error);
-        })
-        .finally(() => {
-            this.onEnd();
-        });
-    }
+    // get(url: string): Observable<any> {
+    //     return super.get(url)
+    //     .catch(this.onCatch)
+    //     .do((res: Response) => {
+    //         this.onSuccess(res);
+    //     }, (error: any) => {
+    //         this.onError(error);
+    //     })
+    //     .finally(() => {
+    //         this.onEnd();
+    //     });
+    // }
 
     // get(url: string, options?: RequestOptionsArgs): Observable<any> {
     //     this.showLoader(url);

@@ -26,36 +26,36 @@ export class AuthenticationService {
         //     return this.http.post(this.optUrl + '/verify_token', payload).map(response => response.json());
         // }
 
-        resendConfirmEmail(payload){
-            return this.http.post(this.userUrl + '/resend_confirmation_email', payload).map(response => response.json());
-        }
-
-        confirmUser(payload){
-            return this.http.get(this.userUrl + '/confirmations/confirmed?confirmation_token=' + payload).map(response => response.json());
-        }
-
-        requestResetPassword(payload){
-            return this.http.post(this.userUrl + '/password', payload).map(response => response.json());
-        }
-
-        verifyPasswordToken(payload){
-            return this.http.get(this.userUrl + '/password/verify_token?reset_password_token=' + payload).map(response => response.json());
-        }
-
-        resetPassword(payload, user_id){
-            return this.http.put(this.userUrl + '/reset_password', payload).map(response => response.json());
-        }
-
-        socialLogin(payload){
-            return this.http.post(this.userUrl + '/social_login', payload).map(response => response.json());
-        }
-
-        // checkDisplayNameAvaialbility(palyload){
-        //     return this.http.get(this.userUrl + '/password/verify_token').map(response => response.json());
+        // resendConfirmEmail(payload){
+        //     return this.http.post(this.userUrl + '/resend_confirmation_email', payload).map(response => response.json());
         // }
 
-        logout(){
-            return this.http.delete(this.userUrl + '/logout').map(response => response.json());
-        }
+        // confirmUser(payload){
+        //     return this.http.get(this.userUrl + '/confirmations/confirmed?confirmation_token=' + payload).map(response => response.json());
+        // }
+
+        // requestResetPassword(payload){
+        //     return this.http.post(this.userUrl + '/password', payload).map(response => response.json());
+        // }
+
+        // verifyPasswordToken(payload){
+        //     return this.http.get(this.userUrl + '/password/verify_token?reset_password_token=' + payload).map(response => response.json());
+        // }
+
+        // resetPassword(payload, user_id){
+        //     return this.http.put(this.userUrl + '/reset_password', payload).map(response => response.json());
+        // }
+
+        // socialLogin(payload){
+        //     return this.http.post(this.userUrl + '/social_login', payload).map(response => response.json());
+        // }
+
+        // // checkDisplayNameAvaialbility(palyload){
+        // //     return this.http.get(this.userUrl + '/password/verify_token').map(response => response.json());
+        // // }
+
+        // logout(){
+        //     return this.http.delete(this.userUrl + '/logout').map(response => response.json());
+        // }
     }
     
